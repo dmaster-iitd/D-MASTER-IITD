@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Multi-task learning with object point cloud representations enable strong generalization in dexterous manipulation.">
+  <meta name="keywords" content="Dexterous Manipulation, Reinforcement Learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>D-MASTER: Mask Annealed Transformer for
+    Unsupervised Domain Adaptation in Breast
+    Cancer Detection from Mammograms</title>
+
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><b>D-MASTER</b>: Mask Annealed Transformer for Unsupervised Domain
+              Adaptation in Breast Cancer Detection from Mammograms</h1>
+              <h3 class="title is-4 conference-authors">
+                <a target="_blank" href="https://conferences.miccai.org/2024/en/" style="color: green;">
+                    MICCAI 2024
+                </a>
+            </h3>
+            
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://www.tajamulashraf.com/">Tajamul Ashraf</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=6A3dai4AAAAJ">Krithika
+                  Rangarajan</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/mohit-gambhir-2ba41b254/?originalSubdomain=in">Mohit Gambhir</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/dr-richa-gauba-34000210b/?original_referer=https%3A%2F%2Fwww%2Ebing%2Ecom%2F&originalSubdomain=in">Richa Gabha</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.cse.iitd.ac.in/~chetan/">Chetan Arora</a><sup>1</sup>,
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Indian Institute of Technology Delhi,</span>
+              <span class="author-block"><sup>2</sup>AIIMS Delhi,</span>
+
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://wenlong.page/papers/geometry-dex.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/huangwl18/geometry-dex/tree/main"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2111.03062" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://wenlong.page/papers/geometry-dex.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fa fa-database"></i>
+                    </span>
+                    <span>Data</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                
+                <span class="link-block">
+                  <a href="https://wenlong.page/papers/geometry-dex.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fa fa-cogs	"></i>
+                    </span>
+                    <span>Demo</span>
+                  </a>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="columns is-centered">
+          <img src="./static/images/teasor.png" width="650" />
+        </div>
+        <!-- <span class="dnerf">Geometry-Aware Multi-Task Policy</span> -->
+      </div>
+      <h2 class="subtitle has-text-centered">
+        Fig. (a) and (b) depict false positive predictions by current teacher student models
+        in cross-domain <b>BCDM</b>. Red boxes indicate ground truth, yellow boxes show Adaptive Teacher
+        predictions, and green boxes indicate predictions from <b>D-MASTER</b>. As shown in (c), our
+        approach effectively mitigates the domain gap and makes accurate predictions.<br>
+        <br>
+      </h2>
+    </div>
+    </div>
+  </section>
+
+
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                We focus on the problem of Unsupervised Domain Adaptation (<b>UDA</b>) for breast cancer detection from
+                mammograms (<b>BCDM</b>)
+                problem. Recent advancements have shown that masked image modeling
+                serves as a robust pretext task for <b>UDA</b>. However, when applied to crossdomain <b>BCDM</b>, these techniques
+                struggle with breast
+                abnormalities such as masses, asymmetries, and micro-calcifications, in part due to the typically much
+                smaller size of region of interest in
+                comparison to natural images. This often results in more false positives per image (<b>FPI</b>)
+                and significant noise in pseudo-labels typically used to bootstrap such
+                techniques. Recognizing these challenges, we introduce a transformerbased Domain-invariant Mask Annealed
+                Student Teacher autoencoder
+                (<b>D-MASTER</b>) framework. <b>D-MASTER</b> adaptively masks and reconstructs multiscale feature maps, enhancing the
+                model’s ability to
+                capture reliable target domain features. <b>D-MASTER</b> also includes adaptive confidence refinement to
+                filter pseudo-labels,
+                ensuring only high-quality detections are
+                considered. We also provide a bounding box annotated subset of 1000
+                mammograms from the RSNA Breast Screening Dataset (referred to as
+                <b>RSNA-BSD1K</b>) to support further research in <b>BCDM</b>. We evaluate <b>D-MASTER</b>
+                on multiple <b>BCDM</b> datasets acquired from diverse domains. Experimental
+                results show a significant improvement of 9% and 13% in sensitivity at 0.3
+                <b>FPI</b> over state-of-the-art <b>UDA</b> techniques on publicly available benchmark
+                INBreast and <b>DDSM</b> datasets respectively. We also report an improvement
+                of 11% and 17% on In-house and <b>RSNA-BSD1K</b> datasets respectively. To
+                promote reproducible research and address the scarcity of accessible resources in <b>BCDM</b>, we will publicly
+                release source code, and pre-trained
+                <b>D-MASTER</b> model, along with <b>RSNA-BSD1K</b> annotations.</p>
+            </div>
+          </div>
+        </div>
+        <!--/ Abstract. -->
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-widescreen">
+      <!-- Overview -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3"><b>D-MASTER</b> Architecture</h2>
+          <div class="content has-text-justified">
+            <p>
+              We introduce <b>D-MASTER</b>, a transformer-based Domain-invariant Mask Annealed Student Teacher Autoencoder
+              Framework for cross-domain
+              breast cancer detection from mammograms (<b>BCDM</b>), integrating a novel mask-annealing technique and adaptive
+              confidence refinement module. Unlike pretraining
+              with mask autoencoders (MAEs) [12], leveraging massive datasets for training and
+              then fine-tuning on smaller datasets, we present a novel learnable masking technique for the MAE branch
+              that generates masks of different complexities, which
+              are reconstructed by the DefDETR [44] encoder and decoder. Our approach, as a
+              self-supervised task on target images, enables the encoder to acquire domain-invariant features and learn
+              better target representations.<br>
+              <br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Overview -->
+      <div class="columns is-centered">
+        <img src="./static/images/architecture.png" width="750" />
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container is-max-widescreen">
+        <!-- Overview -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Mask Annealing Algorithm</h2>
+            <div class="content has-text-justified">
+              <p>
+                Mask Annealing Algorithm (left) and Adaptive Confidence Refinement (right)
+                flowchart depicts the gradual transition of confidence threshold from soft to hard.
+                <!-- Along with the paper, we also release a suite of dexterous manipulation tasks built upon <a
+                  href="https://github.com/openai/gym"><u><b>OpenAI Gym</b></u></a> and <a
+                  href="https://mujoco.org"><u><b>MuJoCo</b></u></a>. Instead of using simple-geometry objects (e.g.
+                cube, egg, etc), the tasks feature a diverse set of 114 real-world objects collected from the <a
+                  href="https://www.ycbbenchmarks.com"><u><b>YCB Dataset</b></u></a> and the <a
+                  href="https://contactdb.cc.gatech.edu"><u><b>ContactDB Dataset</b></u></a>. -->
+              </p>
+            </div>
+          </div>
+        </div class="columns is-centered">
+        <!--/ Overview -->
+        <img src="./static/images/algorithm.png" width="1500" />
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-dark">
+    <div class="hero-body">
+      <div class="container is-max-widescreen">
+        <!-- Training Videos -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Quantitative Results on Mammogram Datasets</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-widescreen">
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <h3 class="title is-4">Evaluation Metric</h3>
+            <div class="content has-text-justified">
+              <P>We use Free-Response Receiver Operating Characteristic
+                (<b>FROC</b>) curves [8] for reporting our results. The curves provide a graphical representation of
+                sensitivity/recall values at different false positives per image (<b>FPI</b>).
+                We follow related works in this area [27] and consider a prediction as true positive if the center of
+                the predicted bounding box lies within the ground-truth
+                box.
+              </P>
+              <p>
+                Table 1 shows the comparative results
+                with other domain adaptation techniques, including those proposed for natural
+                images. Fig. (4) depicts corresponding <b>FROC</b> curves comparison with the nearest competitors only (to
+                avoid clutter).
+              </p>
+            </div>
+            <div class="columns is-centered">
+              <img src="./static/images//results1.png" width="900" />
+            </div>
+
+
+
+          </div>
+
+        </div>
+  </section>
+
+
+  <section class="hero is-dark">
+    <div class="hero-body">
+      <div class="container is-max-widescreen">
+        <!-- Generalization Videos -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Quantitative Results</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-widescreen">
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+
+            <div class="content has-text-justified">
+              <p>
+                Qualitative result comparison on in-house, <b>DDSM</b>, and <b>RSNA-BSD1K</b> datasets. Red
+                boxes show the ground truth, and blue boxes show the predictions. <br>
+                <br>
+              </p>
+              <div class="columns is-centered">
+                <img src="./static/images/quantitative.png" width="900" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+  </section>
+
+
+
+  <section class="hero is-light">
+    <div class="hero-body">
+      <div class="container is-max-widescreen">
+        <!-- Generalization Videos -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Ablation Study</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-widescreen">
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <div class="content has-text-justified">
+              <p>
+                Ablation study to understand impact of each proposed module for
+                In-house to INBreast adaptation. “Source” denotes the source-only trained model,
+                “Baseline” the basic teacher-student architecture, “MA” the proposed mask annealing
+                technique, and “<b>ACR</b>” denotes adaptive confidence refinement module. The figures
+                from left to right correspond to qualitative results from row 1 to row 6 respectively.
+                Red boxes denote the ground truth, and blue boxes show the predicted regions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-centered">
+          <img src="./static/images/ablation.png" width="1500" />
+        </div>
+
+
+
+      </div>
+  </section>
+
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{huang2021geometry,
+      title={<b>D-MASTER</b>: Mask Annealed Transformer for Unsupervised Domain Adaptation in Breast Cancer Detection from Mammograms},
+      author={Ashraf, Tajamul and Rangarajan, Krithika and Gambhir, Mohit and Gabha, Richa and Arora, Chetan},
+      journal={arXiv preprint arXiv:2111.03062},
+      year={2024}
+    }</code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="content">
+          <p>
+            Website template is inspired from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
