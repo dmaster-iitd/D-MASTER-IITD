@@ -1,16 +1,16 @@
-# Nerfies
+# D-MASTER: Mask Annealed Transformer for Unsupervised Domain Adaptation in Breast Cancer Detection from Mammograms
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains the source code for the [D-MASTER website](https://dmaster-iitd.github.io/webpage/).
 
-If you find Nerfies useful for your work please cite:
-```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}
-```
+## Authors
+- Tajamul Ashraf, Indian Institute of Technology Delhi
+- Krithika Rangarajan, AIIMS Delhi
+- Mohit Gambhir, AIIMS Delhi
+- Richa Gabha, AIIMS Delhi
+- Chetan Arora, Indian Institute of Technology Delhi
 
-# Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+## Abstract
+D-MASTER is a Mask Annealed Transformer designed for unsupervised domain adaptation in breast cancer detection from mammograms. This framework integrates a novel mask-annealing technique and an adaptive confidence refinement module, offering improved performance in cross-domain breast cancer detection.
+
+## Citation
+If you find D-MASTER useful for your work, please cite:
